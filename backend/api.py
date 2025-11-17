@@ -57,5 +57,5 @@ def sync_status():
     return jsonify([dict(row) for row in logs])
 
 if __name__ == '__main__':
-    print("API Flask lancée sur http://localhost:5000")
-    app.run(debug=True, port=5000)
+    print("API Flask lancée sur http://0.0.0.0:5000")
+    app.run(host='0.0.0.0', port=5000, debug=True)

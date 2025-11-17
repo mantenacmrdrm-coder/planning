@@ -27,7 +27,7 @@ function App() {
   const fetchPlanning = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:5000/api/planning/2025');
+      const res = await axios.get('/api/planning/2025');
       setPlanning(res.data);
       setFiltered(res.data);
       setError('');
