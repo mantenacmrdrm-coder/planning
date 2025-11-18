@@ -5,6 +5,6 @@
     "3000": { "label": "Frontend", "onAutoForward": "openPreview" },
     "5000": { "label": "Backend Flask" }
   },
-  "postCreateCommand": "npm install -g serve",   # ← cette ligne magique
+  "postCreateCommand": "npm install -g serve",
   "postStartCommand": "./start.sh"
 }
