@@ -112,7 +112,7 @@ function App() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {filtered.map((item, i) => (
+            {(filtered ?? []).map((item, i) => (
               <TableRow key={i} hover>
                 <TableCell>{item.date_prevue}</TableCell>
                 <TableCell>{item.matricule}</TableCell>

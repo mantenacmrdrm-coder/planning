@@ -1,0 +1,10 @@
+{
+  "name": "Planning App",
+  "forwardPorts": [3000, 5000],
+  "portsAttributes": {
+    "3000": { "label": "Frontend", "onAutoForward": "openPreview" },
+    "5000": { "label": "Backend Flask" }
+  },
+  "postCreateCommand": "npm install -g serve",   # ← cette ligne magique
+  "postStartCommand": "./start.sh"
+}
